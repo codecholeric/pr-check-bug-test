@@ -1,0 +1,13 @@
+name: Simple Check
+
+on:
+  pull_request:
+
+jobs:
+  some-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Test
+        run: cat existing-file.txt
